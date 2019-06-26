@@ -10,6 +10,24 @@
 		</style>
 	</head>
 	<body style = "margin:0">
-		<h1>This page is still under heavy development. Please check back at at later time</h1>
+		<h1>Welcome to the homepage for the Scratch Studio Embed Tool.</h1>
+		<h2>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on your site</h2>
+		<p>
+		<p>Paste a studio id in this box to be brought to the embed page for that studio.</p>
+		<input id="StudioID">
+		<button type="button" onclick="validate()">Submit</button>
+		<p id="result"></p>
+	<script>
+	function validate() {
+  	var StudioID;
+	StudioID = document.getElementById("StudioID").value;
+		if (isNaN(x)) {
+		document.getElementById("result").innerHTML = "Not A Studio ID";
+  		} 
+		else {
+    		window.location.href = "https://accio1.github.io/SSE/#"+StudioID+"/";
+  		}
+	}
+	</script>
 	</body>
 </html>
