@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.container {
+			width: 250px;
+			background: #00bfff;
+			}
+		#title {
+			font-family: "Comic Sans MS", Arial, sans-serif;
+			text-align: center;
+			margin-top: 0px;
+			}
+	.image {
+			width: 204px;
+			height: 132.5px;
+			display: block;
+    		margin: 0 auto;
+			}
+	textarea {
+			font-family: "Comic Sans MS", Arial, sans-serif;
+			border: 2px solid black;
+			background: #aae9ff;
+			display: block;
+			margin: 0 auto;
+			white-space:pre-wrap; 
+			width:204px; 
+			height:300px; 
+			resize:none
+			}
+		#credit {
+			font-family: "Comic Sans MS", Arial, sans-serif;
+			font-size: 10px;
+			text-align: center;
+			padding-bottom: 5px;
+			margin-bottom:0px;
+			}
+		a {
+			color: inherit;
+			}
+		a:hover {
+			color: blue;
+			}
+	</style>
+</head>
+<body style="margin:0">
+<div class="container">
+<h2 id="title"></h2>
+<p id="image"></p>
+<textarea id="desc" readonly></textarea>
+<p id="credit">Scratch Studio Embed Made By: <a href="https://github.com/Accio1">-Accio-</a></p>
+</div>
+<script>
+		var pull = new XMLHttpRequest();
+		var Oldsid = location.hash
+		var sid = Oldsid.substring(1)
+		pull.open("GET", "https://crossorigin.me/api.scratch.mit.edu/studios/"+sid+"/");
+		pull.send();
+		pull.onreadystatechange = function() {
+  			if (pull.readyState === 4 && pull.status === 200) 				{
+   			 var pulldone = JSON.parse(pull.responseText
+				);
+				var title = pulldone.title
+				document.getElementById("title").innerHTML = "<a href="+"https://scratch.mit.edu/studios/"+sid+"/>"+title+"</a>";
+				document.getElementById("image").innerHTML = "<img 		src=https://cdn2.scratch.mit.edu/get_image/gallery/"+sid+"_200x130.png class='image'>";
+				var desc = pulldone.description
+				document.getElementById("desc").innerHTML = desc;
+			}
+		}
+</script>
+</body>
+</html>
