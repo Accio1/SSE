@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 .content {
 	margin-left: 5px;
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 
 input[type=text]{
@@ -8,6 +11,7 @@ input[type=text]{
 	border:2px solid white;
   	border-radius:4px;
 	background-color:#F0F0F0;
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
 input[type=submit] {
@@ -17,6 +21,7 @@ input[type=submit] {
 	border-radius: 12px;
 	width: 50px%;
 	border:2px solid black;
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
 input[type=submit]:hover {
