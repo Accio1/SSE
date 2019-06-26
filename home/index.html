@@ -2,27 +2,59 @@
 <html>
 	<head>		
 		<title>Scratch Studio Embed</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="https://accio1.github.io/SSE/home/stylesheet.css">
 		<link rel="shortcut icon" type="image/png" href="https://accio1.github.io/SSE/favicon.png">
 		<style>
-		body{
+		body {
   			background-color: #aae9ff;
 		}
+		
+		#test {
+			float: left;
+			width: 250px; 
+			height: 538.5px;
+			padding-right: 10px;
+			}
+		#Ecode {
+			height: 100px;
+			width: 28%;
+			border: none;
+			border-radius: 2%;
+			resize: none;
+			float: left;
+			background: #aae9ff;
+			}
 		</style>
 	</head>
 	<body style = "margin:0">
 		<div class="content">
 			<h1>Scratch Studio Embed</h1>
 			<h3>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on a website.</h3>
+			<br>
+			
+			<div id="test">
+			<iframe src="https://accio1.github.io/SSE/#17791055" style="width: 250px; height: 538.5px; border: none;"></iframe>
+			</div>
+			
+			<div id="form">
 			<p>Paste a studio id in this box to be brought to the embed page for that studio.</p>
 			<input type="text" id="GT_StudioID">
-			<input type="submit" onclick="GoTo()"></button>
+			<input type="submit" onclick="GoTo()">
 			<p id="GT_result"></p>
-		
+			
+			<br>
+			
 			<p>Paste a studio id in this box to see a preview of the embed for that studio.</p>
 			<input type="text" id="P_StudioID">
-			<input type="submit" onclick="preview()"></button>
+			<input type="submit" onclick="preview()">
 			<p id="P_result"></p>
+			
+			<br>
+			
+			<p>Embed code for the preview featured.</p>
+			<textarea id="Ecode" readonly><iframe src="https://accio1.github.io/SSE/#17791055" style="width: 250px; height: 538.5px; border: none;"></iframe></textarea>
+			<button onclick="copy()">Copy Embed</button>
+			</div>
 		</div>
 	<script>
 	function GoTo() {
@@ -43,8 +75,15 @@
 			document.getElementById("P_result").innerHTML = "Not A Studio ID";
 			}
 		else {
-			document.getElementById("P_result").innerHTML = '<iframe src="https://accio1.github.io/SSE/#'+P_StudioID+'" style="width: 250px; height: 538.5px; border: none"></iframe>';
+			document.getElementById("test").innerHTML = '<iframe src="https://accio1.github.io/SSE/#'+P_StudioID+'" style="width: 250px; height: 538.5px; border: none"></iframe>';
+			document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#'+P_StudioID+'" style="width: 250px; height: 538.5px; border: none"></iframe>';
 			}
+	}
+	
+	function copy() {
+  		var copyText = document.getElementById("Ecode");
+ 		copyText.select();
+  		document.execCommand("copy");
 	}
 	</script>
 	</body>
