@@ -3,19 +3,19 @@
 	<head>		
 		<title>Scratch Studio Embed</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="shortcut icon" type="image/png" href="resources/favicon.png">
 		<style>
-			body{
-  				background-color: #aae9ff;
-			}
+		body{
+  			background-color: #aae9ff;
+		}
 		</style>
 	</head>
 	<body style = "margin:0">
 		<h1>Welcome to the homepage for the Scratch Studio Embed Tool.</h1>
 		<h2>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on your site</h2>
-		<p>
 		<p>Paste a studio id in this box to be brought to the embed page for that studio.</p>
-		<input id="StudioID">
-		<button type="button" onclick="validate()">Submit</button>
+		<input type="text" id="StudioID">
+		<input type="submit" onclick="validate()">Submit</button>
 		<p id="result"></p>
 	<script>
 	function validate() {
