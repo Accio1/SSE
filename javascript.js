@@ -1,3 +1,7 @@
+if (window.location.href=="https://accio1.github.io/SSE/") {
+	window.location.replace("https://accio1.github.io/SSE/home/");
+	}
+
 var pull = new XMLHttpRequest();
 var Oldsid = location.hash
 var sid = Oldsid.substring(1)
