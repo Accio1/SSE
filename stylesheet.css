@@ -3,7 +3,7 @@
 			background: #00bfff;
 			}
 #title {
-			font-family: Comfortaa, Arial, sans-serif;
+			font-family: "Comic Sans MS", Comfortaa, Arial, sans-serif;
 			text-align: center;
 			margin-top: 0px;
 			}
@@ -14,7 +14,7 @@
     			margin: 0 auto;
 			}
 textarea {
-			font-family: Comfortaa, Arial, sans-serif;
+			font-family: "Comic Sans MS", Arial, sans-serif;
 			border: 2px solid black;
 			background: #aae9ff;
 			display: block;
@@ -25,7 +25,7 @@ textarea {
 			resize:none
 			}
 #credit {
-			font-family: Comfortaa, Arial, sans-serif;
+			font-family: "Comic Sans MS", Arial, sans-serif;
 			font-size: 10px;
 			text-align: center;
 			padding-bottom: 5px;
