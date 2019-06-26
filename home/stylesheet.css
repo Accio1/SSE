@@ -1,0 +1,24 @@
+input[type=text]{
+	width:25%;
+	padding:12px 20px;
+	border:2px solid white;
+  	border-radius:4px;
+	background-color:#F0F0F0;
+	}
+			
+input[type=submit] {
+	background-color: #4CAF50;
+	font-size: 16px;
+	padding: 12px 20px;
+	border-radius: 12px;
+	width: 10%;
+	border:2px solid black;
+	}
+			
+input[type=submit]:hover {
+  	background-color: #5cd65c;
+	}
+			
+input[type=submit]:active {
+  	background-color: #145214;
+	}
