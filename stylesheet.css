@@ -1,39 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 .container {
-			width: 250px;
-			background: #00bfff;
-			}
+	width: 250px;
+	background: #00bfff;
+	}
 #title {
-			font-family: "Comic Sans MS", Comfortaa, Arial, sans-serif;
-			text-align: center;
-			margin-top: 0px;
-			}
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	}
 .image {
-			width: 204px;
-			height: 132.5px;
-			display: block;
-    			margin: 0 auto;
-			}
+	width: 204px;
+	height: 132.5px;
+	display: block;
+    	margin: 0 auto;
+	}
 textarea {
-			font-family: "Comic Sans MS", Arial, sans-serif;
-			border: 2px solid black;
-			background: #aae9ff;
-			display: block;
-			margin: 0 auto;
-			white-space:pre-wrap; 
-			width:204px; 
-			height:300px; 
-			resize:none
-			}
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	border: 2px solid black;
+	background: #aae9ff;
+	display: block;
+	margin: 0 auto;
+	white-space:pre-wrap; 
+	width:204px; 
+	height:300px; 
+	resize:none
+	}
 #credit {
-			font-family: "Comic Sans MS", Arial, sans-serif;
-			font-size: 10px;
-			text-align: center;
-			padding-bottom: 5px;
-			margin-bottom:0px;
-			}
+	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom:0px;
+	}
 a {
-			color: inherit;
-			}
+	color: inherit;
+	}
 a:hover {
-			color: blue;
-			}
+	color: blue;
+	}
