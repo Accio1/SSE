@@ -1,3 +1,7 @@
+.content {
+	margin-left: 5px;
+	}
+
 input[type=text]{
 	width:25%;
 	padding:12px 20px;
@@ -7,18 +11,18 @@ input[type=text]{
 	}
 			
 input[type=submit] {
-	background-color: #4CAF50;
+	background-color: #7AC5CD;
 	font-size: 16px;
 	padding: 12px 20px;
 	border-radius: 12px;
-	width: 10%;
+	width: 50px%;
 	border:2px solid black;
 	}
 			
 input[type=submit]:hover {
-  	background-color: #5cd65c;
+  	background-color: #8EE5EE;
 	}
 			
 input[type=submit]:active {
-  	background-color: #145214;
+  	background-color: #8EE5EE;
 	}
