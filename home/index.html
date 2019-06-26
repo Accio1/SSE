@@ -12,23 +12,39 @@
 	</head>
 	<body style = "margin:0">
 		<div class="content">
-			<h1>Welcome to the homepage for the Scratch Studio Embed Tool.</h1>
-			<h2>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on your site</h2>
+			<h1>Scratch Studio Embed</h1>
+			<h3>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on a website.</h3>
 			<p>Paste a studio id in this box to be brought to the embed page for that studio.</p>
-			<input type="text" id="StudioID">
-			<input type="submit" onclick="validate()"></button>
-			<p id="result"></p>
+			<input type="text" id="GT_StudioID">
+			<input type="submit" onclick="GoTo()"></button>
+			<p id="GT_result"></p>
+		
+			<p>Paste a studio id in this box to see a preview of the embed for that studio.</p>
+			<input type="text" id="P_StudioID">
+			<input type="submit" onclick="preview()"></button>
+			<p id="P_result"></p>
 		</div>
 	<script>
-	function validate() {
-  	var StudioID;
-	StudioID = document.getElementById("StudioID").value;
-		if (isNaN(StudioID)) {
-		document.getElementById("result").innerHTML = "Not A Studio ID";
-  		} 
+	function GoTo() {
+  	var GT_StudioID;
+	GT_StudioID = document.getElementById("GT_StudioID").value;
+		if (isNaN(GT_StudioID)) {
+			document.getElementById("GT_result").innerHTML = "Not A Studio ID";
+  			} 
 		else {
-    		window.location.href = "https://accio1.github.io/SSE/#"+StudioID;
-  		}
+    			window.location.href = "https://accio1.github.io/SSE/#"+GT_StudioID;
+  			}
+	}
+		
+	function preview() {
+	var P_StudioID;
+	P_StudioID = document.getElementById("P_StudioID").value;
+		if (isNaN(P_StudioID)) {
+			document.getElementById("P_result").innerHTML = "Not A Studio ID";
+			}
+		else {
+			document.getElementById("P_result").innerHTML = '<iframe src="https://accio1.github.io/SSE/#'+P_StudioID+'style="width: 250px; height: 538.5px; border: none"></iframe>';
+			}
 	}
 	</script>
 	</body>
