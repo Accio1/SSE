@@ -14,7 +14,7 @@ input[type=text]{
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
-input[type=submit] {
+input[type=submit], button {
 	background-color: #7AC5CD;
 	font-size: 16px;
 	padding: 12px 20px;
@@ -24,10 +24,10 @@ input[type=submit] {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
-input[type=submit]:hover {
+input[type=submit]:hover, button:hover {
   	background-color: #8EE5EE;
 	}
 			
-input[type=submit]:active {
+input[type=submit]:active, button:active {
   	background-color: #8EE5EE;
 	}
