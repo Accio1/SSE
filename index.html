@@ -54,7 +54,7 @@
 		var pull = new XMLHttpRequest();
 		var Oldsid = location.hash
 		var sid = Oldsid.substring(1)
-		pull.open("GET", "https://crossorigin.me/api.scratch.mit.edu/studios/"+sid+"/");
+		pull.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/studios/"+sid+"/");
 		pull.send();
 		pull.onreadystatechange = function() {
   			if (pull.readyState === 4 && pull.status === 200) 				{
