@@ -8,7 +8,7 @@ function GoTo() {
 			document.getElementById("GT_result").innerHTML = "Not A Studio ID";
   			} 
 		else {
-    			window.location.href = "/SSE/#"+GT_StudioID;
+    			window.location.href = "../#"+GT_StudioID;
   			}
 	}
 		
