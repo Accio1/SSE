@@ -1,5 +1,5 @@
 if (window.location.hash === "" || window.location.hash === "#") {
-	window.location.replace("/home");
+	window.location.replace("/SSE/home");
 }
 
 var pull = new XMLHttpRequest();
