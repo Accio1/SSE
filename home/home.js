@@ -1,4 +1,4 @@
-document.getElementById("embed").innerHTML = '<iframe src="https://accio1.github.io/SSE/#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
+document.getElementById("embed").innerHTML = '<iframe src="../#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
 document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
 	
 function GoTo() {
@@ -8,7 +8,7 @@ function GoTo() {
 			document.getElementById("GT_result").innerHTML = "Not A Studio ID";
   			} 
 		else {
-    			window.location.href = "#"+GT_StudioID;
+    			window.location.href = "../#"+GT_StudioID;
   			}
 	}
 		
@@ -19,8 +19,8 @@ function preview() {
 			document.getElementById("P_result").innerHTML = "Not A Studio ID";
 			}
 		else {
-			document.getElementById("embed").innerHTML = `<iframe src="https://accio1.github.io/SSE/#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
-			document.getElementById("Ecode").innerHTML = `<iframe src="https://accio1.github.io/SSE/#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
+			document.getElementById("embed").innerHTML = `<iframe src="../#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
+			document.getElementById("Ecode").innerHTML = `<iframe src="../#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
 			}
 	}
 	
