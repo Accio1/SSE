@@ -3,7 +3,7 @@ document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github
 	
 function GoTo() {
 	var GT_StudioID;
-	GT_StudioID = document.getElementById("GT_StudioID").value;
+	GT_StudioID = document.getElementById("GT_StudioID").value.toUpperCase();
 		if (isNaN(GT_StudioID) && GT_StudioID !=="SDS" && GT_StudioID !=="FEATURED") {
 			document.getElementById("GT_result").innerHTML = "Not A Studio ID";
   			} 
