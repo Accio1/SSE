@@ -1,7 +1,7 @@
 setTimeout(display, 50)
 
 if (window.location.hash === "" || window.location.hash === "#") {
-	window.location.replace("/SSE/home");
+	window.location.replace("home");
 	} 
 	
 function error(title, message) {
