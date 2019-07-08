@@ -20,7 +20,7 @@ function preview() {
 			}
 		else {
 			document.getElementById("embed").innerHTML = `<iframe src="../#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
-			document.getElementById("Ecode").innerHTML = `<iframe src="../#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
+			document.getElementById("Ecode").innerHTML = `<iframe src="https://accio1.github.io/SSE/#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
 			}
 	}
 	
