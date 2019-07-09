@@ -4,38 +4,41 @@
 		<title>Scratch Studio Embed</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<link rel="shortcut icon" type="image/png" href="../favicon.png">
-		<style>
-		body {
-  			background-color: #aae9ff;
-		}
-		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="AN easy way toembed studios on your website">
+		<meta name="keywords" content="Scratch,HTML,Embed,Studio">
+		<meta name="author" content="-Accio-">
 	</head>
 	<body style="margin:0">
 		<div class="content">
-			<h1>Scratch Studio Embed
-			<span id="DevTag">By -Accio-</span></h1>
-			<h3>Scratch Studio Embed is a tool which you can use to embed the title, thumbnail, and description of a studio on a website.</h3>
-			<br>
+			<div class="left">
+				<h1 style="margin-top:0px;">Scratch Studio Embed<span id="DevTag">By -Accio-</span></h1>
+				<h3>An easy way to embed studios on your website.</h3>
+				<br>
+				<p>Paste a studio id in the box</p>
+				<input type="text" id="P_StudioID"  placeholder="Studio Id">
+				<button onclick="preview()">Preview</button>
+				<p id="P_result"></p>
+				<br>
+				<p>Embed code for the preview featured:</p>
+				<textarea id="Ecode" readonly></textarea>
+				<button onclick="copy()">Copy Embed</button><span id="copied"></span>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h2>Special Commands</h2>
+				<p>-Using "SDS" as the studio id will make the embed display the current SDS.</p>
+				<p>-Using "Featured" as the studio id will make the embed display the current featured studio.</p>
+			</div>
 			
-			<div id="embed"></div>
+			<div class="middle"></div>
 			
-			<p>Paste a studio id in this box to be brought to the embed page for that studio.</p>
-			<input type="text" id="GT_StudioID">
-			<button onclick="GoTo()">Submit</button>
-			<p id="GT_result"></p>
-			
-			<br>
-			
-			<p>Paste a studio id in this box to see a preview of the embed for that studio.</p>
-			<input type="text" id="P_StudioID">
-			<button onclick="preview()">Submit</button>
-			<p id="P_result"></p>
-			
-			<br>
-			
-			<p>Embed code for the preview featured.</p>
-			<textarea id="Ecode" readonly></textarea>
-			<button onclick="copy()">Copy Embed</button><span id="copied"></span>
+			<div class="right">
+				<h2>Preview:</h2>
+				<div id="embed"></div>
+			</div>
 		</div>
 		<script src="home.js"></script>
 	</body>
