@@ -4,6 +4,17 @@
 	margin-left: 5px;
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
+			
+#DevTag {
+	background: #7db35f;
+	padding: 2px 5px;
+	margin: 0px;
+	text-align: center;
+	border-radius: 25px;
+	display:inline-block;
+	font-size: 15px;
+	vertical-align:super;
+	}
 
 input[type=text]{
 	width:25%;
@@ -14,7 +25,7 @@ input[type=text]{
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
-input[type=submit], button {
+button {
 	background-color: #7AC5CD;
 	font-size: 16px;
 	padding: 12px 20px;
@@ -23,11 +34,41 @@ input[type=submit], button {
 	border:2px solid black;
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
-			
-input[type=submit]:hover, button:hover {
+				
+button:hover {
   	background-color: #8EE5EE;
 	}
 			
-input[type=submit]:active, button:active {
+button:active {
   	background-color: #8EE5EE;
+	}
+			
+body {
+  	background-color: #aae9ff;
+	}
+		
+#embed {
+	float: left;
+	width: 250px; 
+	height: 538.5px;
+	padding-right: 10px;
+	}
+			
+#Ecode {
+	height: 100px;
+	width: 28%;
+	border: none;
+	border-radius: 2%;
+	resize: none;
+	float: left;
+	background: #aae9ff;
+	}
+			
+#Ecode:focus {
+  	outline-color: transparent;
+  	outline-style: none;
+	}
+		
+#copied {
+	margin-left: 10px;
 	}

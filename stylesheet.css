@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 .container {
 	width: 250px;
+	min-height: 538.5px;
 	background: #00bfff;
 	}
+		
 #title {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	text-align: center;
 	margin-top: 0px;
 	}
+		
+#error:not(:empty) {
+	font-family: "Comic Sans MS", Arial, sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	}
+		
 .image {
 	width: 204px;
 	height: 132.5px;
 	display: block;
     	margin: 0 auto;
 	}
+		
 textarea {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	border: 2px solid black;
@@ -22,9 +33,10 @@ textarea {
 	margin: 0 auto;
 	white-space:pre-wrap; 
 	width:204px; 
-	height:300px; 
-	resize:none
+	height:300px; 	
+	resize:none;
 	}
+		
 #credit {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	font-size: 10px;
@@ -32,9 +44,11 @@ textarea {
 	padding-bottom: 5px;
 	margin-bottom:0px;
 	}
+		
 a {
 	color: inherit;
 	}
+		
 a:hover {
 	color: blue;
 	}
