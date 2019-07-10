@@ -1,14 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
-
-.content {
-	margin-left: 5px;
+		
+html, body {
+	margin: 0;
+	height: 100%;
+	}
+			
+body {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	background-color: #d4f0faff;
+	}
+* {
+	box-sizing: border-box;
+	}
+			
+.content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 0px;
+	overflow: hidden;
+	}
+
+/*Left Side*/
+
+.left {
+	width: 50%;
+	margin-left: 5px;
 	}
 			
 #DevTag {
 	background: #7db35f;
 	padding: 2px 5px;
 	margin: 0px;
+	margin-left: 2px;
 	text-align: center;
 	border-radius: 25px;
 	display:inline-block;
@@ -17,12 +41,11 @@
 	}
 
 input[type=text]{
-	width:25%;
+	width: 50%;
 	padding:12px 20px;
 	border:2px solid white;
   	border-radius:4px;
 	background-color:#F0F0F0;
-	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	}
 			
 button {
@@ -30,9 +53,9 @@ button {
 	font-size: 16px;
 	padding: 12px 20px;
 	border-radius: 12px;
-	width: 50px%;
+	width: 25%;
 	border:2px solid black;
-	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	margin-left: 5px;
 	}
 				
 button:hover {
@@ -43,25 +66,14 @@ button:active {
   	background-color: #8EE5EE;
 	}
 			
-body {
-  	background-color: #aae9ff;
-	}
-		
-#embed {
-	float: left;
-	width: 250px; 
-	height: 538.5px;
-	padding-right: 10px;
-	}
-			
 #Ecode {
 	height: 100px;
-	width: 28%;
+	width: 50%;
 	border: none;
 	border-radius: 2%;
 	resize: none;
 	float: left;
-	background: #aae9ff;
+	background: transparent;
 	}
 			
 #Ecode:focus {
@@ -71,4 +83,43 @@ body {
 		
 #copied {
 	margin-left: 10px;
+			}
+/*End Left*/
+		
+.middle {
+	width: 20%;
+	background-image: url("RightBG.svg");
+  	background-position: left;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
 	}
+/*Right Side*/
+			
+.right {
+	text-align: center;
+	width: 30%;
+	background-color: #aae9ffff;
+	}
+			
+#embed {
+	width: 250px; 
+	height: 538.5px;
+	margin: auto;
+	}
+			
+@media only screen and (max-width: 1045px) {
+	.content {
+		flex-direction: column;
+		}
+	.left {
+		width: 100%;
+		}	
+	.middle {
+		width: 100%;
+		visibility: hidden;
+		}
+	.right {
+		width: 100%;
+		border-radius: 25%;
+		}
+}

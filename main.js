@@ -1,4 +1,4 @@
-setTimeout(display, 50)
+setTimeout(display, 200)
 
 if (window.location.hash === "" || window.location.hash === "#") {
 	window.location.replace("home");
