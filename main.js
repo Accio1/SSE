@@ -1,5 +1,3 @@
-setTimeout(display, 500)
-
 if (window.location.hash === "" || window.location.hash === "#") {
 	window.location.replace("home");
 	} 
@@ -13,22 +11,29 @@ var pull = new XMLHttpRequest()
 var Oldsid = location.hash
 var sid = Oldsid.substring(1).toUpperCase();
 	
-if (sid=="SDS" || sid=="FEATURED") {
-	pull.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/proxy/featured");
-	pull.send();
-	pull.onreadystatechange = function() {
-  		if (pull.readyState === 4 && pull.status === 200) {
-   			pulldone = JSON.parse(pull.responseText);
-			if (sid == "SDS") {
-				sid = pulldone.scratch_design_studio[0].gallery_id;
-			}
-			else if (sid == "FEATURED") {
-				sid = pulldone.community_featured_studios[0].id
+function calculate(){
+	if (sid=="SDS" || sid=="FEATURED") {
+		pull.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/proxy/featured");
+		pull.send();
+		pull.onreadystatechange = function() {
+  			if (pull.readyState === 4 && pull.status === 200) {
+   				pulldone = JSON.parse(pull.responseText);
+				if (sid == "SDS") {
+					sid = pulldone.scratch_design_studio[0].gallery_id;
+					display()
+				}
+				else if (sid == "FEATURED") {
+					sid = pulldone.community_featured_studios[0].id
+					display()
+				}
 			}
 		}
 	}
+	else {
+		display()
+	}
 }
-	
+
 function display(){
 	var pull = new XMLHttpRequest()
 	pull.open("GET", `https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/studios/${sid}`);

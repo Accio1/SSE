@@ -1,5 +1,5 @@
-document.getElementById("embed").innerHTML = '<iframe src="../#26498205" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
-document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#26498205" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
+document.getElementById("embed").innerHTML = '<iframe src="../#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
+document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
 	
 function preview() {
 	var P_StudioID;
