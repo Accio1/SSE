@@ -9,6 +9,7 @@ body {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
 	background-color: #d4f0faff;
 	}
+
 * {
 	box-sizing: border-box;
 	}
@@ -21,16 +22,23 @@ body {
 	overflow: hidden;
 	}
 
+a {
+	color: inherit;
+	}
+		
+a:hover {
+	color: blue;
+	}
+
 /*Left Side*/
 
 .left {
 	width: 50%;
-	margin-left: 5px;
+	padding: 5px
 	}
 			
 #DevTag {
-	background: #7db35f;
-	padding: 2px 5px;
+	padding: 5px;
 	margin: 0px;
 	margin-left: 2px;
 	text-align: center;
@@ -51,7 +59,7 @@ input[type=text]{
 button {
 	background-color: #7AC5CD;
 	font-size: 16px;
-	padding: 12px 20px;
+	padding: 10px 15px;
 	border-radius: 12px;
 	width: 25%;
 	border:2px solid black;
@@ -64,6 +72,7 @@ button:hover {
 			
 button:active {
   	background-color: #8EE5EE;
+	outline: none;
 	}
 			
 #Ecode {
@@ -77,8 +86,7 @@ button:active {
 	}
 			
 #Ecode:focus {
-  	outline-color: transparent;
-  	outline-style: none;
+  	outline: none;
 	}
 		
 #copied {
@@ -103,7 +111,7 @@ button:active {
 			
 #embed {
 	width: 250px; 
-	height: 538.5px;
+	height: 600px;
 	margin: auto;
 	}
 			
@@ -120,6 +128,5 @@ button:active {
 		}
 	.right {
 		width: 100%;
-		border-radius: 25%;
 		}
 }
