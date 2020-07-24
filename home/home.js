@@ -1,5 +1,5 @@
-document.getElementById("embed").innerHTML = '<iframe src="../#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
-document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#FEATURED" style="width: 250px; min-height: 538.5px; border: none;"></iframe>';
+document.getElementById("embed").innerHTML = '<iframe src="../index.html#FEATURED" style="width: fit-content; min-height: 700px; border: none;"></iframe>';
+document.getElementById("Ecode").innerHTML = '<iframe src="https://accio1.github.io/SSE/#FEATURED" style="width: fit-content; min-height: 700px; border: none;"></iframe>';
 	
 function preview() {
 	var P_StudioID;
@@ -7,9 +7,13 @@ function preview() {
 	if (isNaN(P_StudioID) && P_StudioID !=="SDS" && P_StudioID !=="FEATURED") {
 		document.getElementById("P_result").innerHTML = "Not A Studio ID";
 		}
+	else if (P_StudioID =="") { 
+		document.getElementById("P_result").innerHTML = "Please Enter A Studio ID";
+		}
 	else {
-		document.getElementById("embed").innerHTML = `<iframe src="../#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
-		document.getElementById("Ecode").innerHTML = `<iframe src="https://accio1.github.io/SSE/#${P_StudioID}" style="width: 250px; height: 538.5px; border: none"></iframe>`;
+		document.getElementById("P_result").innerHTML = "";
+		document.getElementById("embed").innerHTML = `<iframe src="../index.html#${P_StudioID}" style="width: fit-content; min-height: 700px; border: none"></iframe>`;
+		document.getElementById("Ecode").innerHTML = `<iframe src="https://accio1.github.io/SSE/#${P_StudioID}" style="width: fit-content; min-height: 700px; border: none"></iframe>`;
 		}
 }
 	
@@ -21,7 +25,7 @@ function copy() {
 	var loop = setInterval(clear,1);
 	var i = 1;
 	function clear() {
-		i = i-0.01;
+		i = i-0.005;
  		document.getElementById("copied").style.opacity = i;
 		if (i < 0) {
 			clearInterval(loop)
