@@ -13,7 +13,7 @@ var sid = Oldsid.substring(1).toUpperCase();
 	
 function calculate(){
 	if (sid=="SDS" || sid=="FEATURED") {
-		pull.open("GET", "https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/proxy/featured");
+		pull.open("GET", "https://scratchcors.herokuapp.com//api.scratch.mit.edu/proxy/featured");
 		pull.send();
 		pull.onreadystatechange = function() {
   			if (pull.readyState === 4 && pull.status === 200) {
@@ -36,7 +36,7 @@ function calculate(){
 
 function display(){
 	var pull = new XMLHttpRequest()
-	pull.open("GET", `https://cors-anywhere.herokuapp.com/api.scratch.mit.edu/studios/${sid}`);
+	pull.open("GET", `https://scratchcors.herokuapp.com//api.scratch.mit.edu/studios/${sid}`);
 	pull.send();
 		pull.onreadystatechange = function() {
 			if (pull.readyState === 4 && pull.status === 200) {
