@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 .container {
 	width: 250px;
-	/*min-height: 538.5px;
-	min-height: 170px;*/
 	height: fit-content;
 	background: #00bfff;
 	border-radius: 10px;
-	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
+	font-family: Comfortaa, Arial, sans-serif;
 	padding: 5px;
 	}
 		
@@ -32,18 +31,18 @@
 		
 textarea {
 	border: 2px solid black;
-	background: #aae9ff;
+	background: #8ae2ff;
 	display: block;
-	margin: 0 auto;
-	white-space:pre-wrap; 
-	width:204px; 
-	height:300px; 	
-	resize:none;
+	margin: 0 auto; 
+	width: 204px; 
+	height: 300px; 	
+	resize: none;
 	border-radius: 7px;
 	cursor: default;
 	font-family: "helvetica neue", arial, sans-serif;
 	font-weight: 400;
 	font-size: 13px;
+	box-sizing: border-box;
 	}
 
 textarea:focus {

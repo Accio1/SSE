@@ -1,16 +1,33 @@
+const proxy = "https://cors-anywhere.herokuapp.com/"
+//const proxy = "https://scratchcors.herokuapp.com/"
+
 if (window.location.hash === "" || window.location.hash === "#") {
 	window.location.replace("home");
-	} 
-	
+	}
+
 function error(title, message) {
 	document.getElementById("title").innerHTML = title;
 	document.getElementById("error").innerHTML = message;
 }
-		
-var pull = new XMLHttpRequest()		
+
+function sendsite(){
+	var topURL = document.referrer;
+	if (topURL=="") {
+		topURL="local";
+	}
+	console.log(topURL);
+	var formData = new FormData();
+	formData.append('site', topURL);
+	formData.append('tool', 'SSE');
+	fetch('https://script.google.com/macros/s/AKfycbwgdxViMZFoAYwJXpXm2Ifd6uMBIXGB564w8jM_osPeu9mC4dY/exec', { method: 'POST', body: formData})
+	.then(response => console.log('Success!', response))
+	.catch(error => console.error('Error!', error.message))
+}
+
+var pull = new XMLHttpRequest()
 var Oldsid = location.hash
 var sid = Oldsid.substring(1).toUpperCase();
-	
+
 function calculate(){
 	if (sid=="SDS" || sid=="FEATURED") {
 		pull.open("GET", "https://scratchcors.herokuapp.com/api.scratch.mit.edu/proxy/featured");

@@ -7,7 +7,7 @@ html, body {
 			
 body {
 	font-family: Comfortaa, "Comic Sans MS", Arial, sans-serif;
-	background-color: #d4f0faff;
+	background-color: #00bfff;
 	}
 
 * {
@@ -34,10 +34,11 @@ a:hover {
 
 .left {
 	width: 50%;
-	padding: 5px
+	padding: 5px;
+	color: white;
 	}
 			
-#DevTag {
+.DevTag {
 	padding: 5px;
 	margin: 0px;
 	margin-left: 2px;
@@ -46,6 +47,8 @@ a:hover {
 	display:inline-block;
 	font-size: 15px;
 	vertical-align:super;
+	background: #8ef78b;
+	color: black;
 	}
 
 input[type=text]{
@@ -57,7 +60,7 @@ input[type=text]{
 	}
 			
 button {
-	background-color: #7AC5CD;
+	background-color: #8ae2ff;
 	font-size: 16px;
 	padding: 10px 15px;
 	border-radius: 12px;
@@ -67,22 +70,22 @@ button {
 	}
 				
 button:hover {
-  	background-color: #8EE5EE;
+	background-color: #8EE5EE;
 	}
 			
 button:active {
-  	background-color: #8EE5EE;
 	outline: none;
 	}
 			
 #Ecode {
-	height: 100px;
+	height: 70px;
 	width: 50%;
 	border: none;
 	border-radius: 2%;
 	resize: none;
 	float: left;
 	background: transparent;
+	color: white;
 	}
 			
 #Ecode:focus {
@@ -97,16 +100,14 @@ button:active {
 .middle {
 	width: 20%;
 	background-image: url("RightBG.svg");
-  	background-position: left;
- 	background-repeat: no-repeat;
-  	background-size: cover;
+	background-size: cover;
 	}
 /*Right Side*/
 			
 .right {
 	text-align: center;
 	width: 30%;
-	background-color: #aae9ffff;
+	background-color: #8ae2ff;
 	}
 			
 #embed {

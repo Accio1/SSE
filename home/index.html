@@ -7,35 +7,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 		<meta name="description" content="Scratch Studio Embed is an easy way to embed Scratch studios on your website.">
-		<meta name="keywords" content="Scratch,HTML,Embed,Studio">
+		<meta name="keywords" content="Scratch, HTML, Embed, Studio">
 		<meta name="author" content="-Accio-">
 	</head>
 	<body style="margin:0">
 		<div class="content">
 			<div class="left">
-				<h1 style="margin-top:0px;">Scratch Studio Embed <span id="DevTag" style="background: #7db35f;">By -Accio-</span> <a href="https://github.com/Accio1/SSE" title="View on GitHub"><img src="GitHub.png" style="height:25px; margin-bottom: 3px;"></a></h1>
+				<h1 style="margin-top:0px;">Scratch Studio Embed <span class="DevTag">By -Accio-</span> <a href="https://github.com/Accio1/SSE" title="View on GitHub"><img src="GitHub.png" style="height:25px; margin-bottom: 3px;"></a></h1>
 				<h3>An easy way to embed Scratch studios on your website.</h3>
 				<p>Paste a studio id in the box</p>
 				<input type="text" id="P_StudioID"  placeholder="Studio Id">
 				<button onclick="preview()">Preview</button>
 				<p id="P_result"></p>
 				<br>
+				
+				<div class="embedcode">
 				<p>Embed code for the preview featured:</p>
 				<textarea id="Ecode" readonly></textarea>
-				<button onclick="copy()">Copy Embed</button><span id="copied"></span>
+				<button onclick="copy()">Copy Embed</button><p id="copied"></p>
+				</div>
 				<br>
 				<br>
-				<br>
-				<br>
-				<br>
+				<div class="specialcommands">
 				<h2 style="margin: 0px;">Special Commands</h2>
 				<p>-Using "SDS" as the studio id will make the embed display the current SDS.</p>
 				<p>-Using "Featured" as the studio id will make the embed display the current featured studio.</p>
-				<br>
-				<h3 style="margin: 0px;">Disclaimer</h3>
-				<!--<p>This project is open source and developed on GitHub <a href="https://github.com/Accio1/SSE">here</a>. Feel free to contribute by opening  an <a href="https://github.com/Accio1/SSE/issues">issue</a> or submitting a <a href="https://github.com/Accio1/SSE/pulls">pull request</a>.</p>-->
+				</div>
+				<!--<h3 style="margin: 0px;">Disclaimer</h3>
+				<p>This project is open source and developed on GitHub <a href="https://github.com/Accio1/SSE">here</a>. Feel free to contribute by opening  an <a href="https://github.com/Accio1/SSE/issues">issue</a> or submitting a <a href="https://github.com/Accio1/SSE/pulls">pull request</a>.</p>
 				<p>Scratch Studio Embed is not an official Scratch Website, and isn't developed or endorsed by the Scratch Team.<br><br>
-Scratch is developed by the Lifelong Kindergarten Group at the MIT Media Lab. See <a href="https://scratch.mit.edu">https://scratch.mit.edu</a></p>
+Scratch is developed by the Lifelong Kindergarten Group at the MIT Media Lab. See <a href="https://scratch.mit.edu">https://scratch.mit.edu</a></p>-->
 			</div>
 			
 			<div class="middle"></div>
